@@ -1,0 +1,94 @@
+body {
+  background-image: url("pro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial;
+  text-align: center;
+  height: 150vh;
+  animation: fadeInPage 1.5s ease-in;
+}
+
+h1 {
+
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+select, button {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  background-color: #ffffffee;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  text-align: left;
+  animation: slideUp 0.8s ease forwards;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  color: #007BFF;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.loader {
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeInPage 1.5s ease-in;
+}
